@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang = "es-mx">
+	<HEAD>
+		<meta charset = "UTF-8">
+		<title> Práctica de FLEX </title>
+		<link rel = "stylesheet" href = estilo.css>
+		</style>
+	</HEAD>
+	<BODY>
+		<a href = pagina.html> <button>◀ Volver</button> </a>
+		<!-- ELEMENTO CENTRADO VER. Y HOR. -->
+		<div class = trj>
+			<div class = ttl> Centrar </div>
+			<div class = "cj1 cen">
+				<div class = "cj2 cen2">
+					Centrado
+				</div>
+			</div>
+			<div class = txt>
+				En la caja se encuentran los elementos flex.
+				<br> Sólo el contenedor (azul) contiene propiedades flex,
+				mientras que el elemento (rojo) sólo tiene dimensiones.
+			</div>
+		</div>
+		<!-- BARRA DE NAVEGACIÓN CENTRADA -->
+		<div class = trj>
+			<div class = ttl> Barra </div>
+			<div class = "cj1 nav">
+				<div class = "cj2 nave navi"> Izquierda </div>
+				<div class = "cj2 nave navi"> Izquierda 2 </div>
+				<div class = cj3 style = "flex: 1;">Espacio ¿</div>
+				<div class = "cj2 nave navc"> Centro <br> LOGO </div>
+				<div class = cj3 style = "flex: 1;">Espacio 2?</div>
+				<div class = "cj2 nave navd"> Derecha </div>
+				<div class = "cj2 nave navd"> Derecha 2 </div>
+			</div>
+			<div class = txt> En este, los elementos se ven posicionados 
+				de manera que parece barra de navegación. <br>
+				La caja (azul), sin importar su altura,
+				mantiene a los elementos centrados (verticalmente).
+				Los elementos (rojos) tienen alineación según su posición. <br>
+				Como el centrado es justificado, utilizan un elemento
+				con flex: 1, para ocupar el restante. No es la mejor solución;
+				sigue el flujo en menor resolución.
+			</div>
+		</div>
+		<!-- BARRA DE NAVEGACIÓN 2 -->
+		<div class = trj>
+			<div class = ttl> Barra 2 </div>
+			<div class = "cj1 nav">
+				<div class = "cj2 nav2 nav2i"> Izquierda <br> LOGO </div>
+				<div class = "cj2 nav2 nav2i c2f"> Izquierda 2</div>
+				<div class = "cj2 nav2 nav2i c2f"> Izquierda 3</div>
+				<div class = cj3 style = "flex: 1;"> Espacio </div>
+				<div class = "cj2 nav2 nav2d c2f">Derecha</div>
+			</div>
+			<div class = txt> Similar al anterior.
+				En este, al cambiar de tamaño se desplazan los elementos.
+				Al parecer, sólo es necesario un elemento (espacio) con
+				flex: 1. Abarcará todo el espacio, mientras que los demás
+				elementos se acoplaran por el muestreo acoplado (display: flex). 
+				<br> Nuevamente, puede que esta no sea la manera más adecuada.
+			</div>
+		</div>
+		<!-- PANEL DE INFORMACIÓN -->
+		<div class = trj>
+			<div class = ttl> Panel </div>
+			<div class = cj1>
+				<div class = "cj3 pnlt"> Título </div> 
+				<div class = "cj3 pnl">
+					<div class = "cj2 pnli">
+						<div class = "cj3 ">
+							<img src = estrella.png
+								al = "Estrella de 4 puntas."
+								width = 60px>
+						</div>
+						Texto
+					</div>
+					<div class = "cj2 pnli">
+						<div class = cj3>
+							<img src = estrella.png
+								al = "Estrella de 4 puntas."
+								height = 60px>
+						</div>
+						Texto texto
+					</div>
+					<div class = "cj2 pnli">
+						<div class = cj3>
+							<img src = estrella.png
+								al = "Estrella de 4 puntas."
+								height = 60px>
+						</div>
+						Texto texto <br> texto
+					</div>
+				</div>
+			</div>
+			<div class = txt> Es muestra elementos agrupados y centrados.
+				Se tiene la subcaja (roja) conteniendo y, por su ancho,
+				dimensionando a la caja de la imagen (verde).
+				Ajustándose a su contenido y centrando su texto.
+				Este último, bajando por el límite de la roja.
+				<br>La solución de la práctica es mucho más eficiente...
+			</div>
+		</div>
+
+		<div class = trj>
+			<div class = ttl>Mensaje</div>
+			<div class = "cj1 pop">
+				<div class = "cj2 popi">
+					<img src = search-white.png
+						al = "Lupa. Ícono para buscar."
+						style = "min-height: 5vh; max-height: 7vh"
+						class = cj3>
+				</div>
+				<!-- MENSAJE O POPUP DE INFORMACION -->
+				<div class = "cj2">
+					<div class = "cj3 poptl"> Título del mensaje
+						<a href = "#">
+						<button class = "cj2" 
+							style = "float: right; margin: 0px 0px 10px 10px; padding: 0px;">
+								<img src = "x.png"
+									al = "Cruz para cerrar."
+									width = 16
+									style = "margin: 0px 5px;">
+						</button>
+						</a>
+					</div>
+					<div class = "cj3 poptx"> Descripción del mensaje. 
+						<br> Texto texto texto wiwiwiwiwiiwiwiwiwi
+						uouoououououououoou
+						<br> Aaah
+						<br> bip bup
+					</div>
+					<div class = cj3 style = "display: flex; ">
+						<button class = cj1 style = "padding: 5px 10px; margin-left: auto;">
+							Botón1</button>
+						<button class = cj1 style = "padding: 5px 10px;">
+							Botón2</button>
+					</div>
+				</div>
+			</div>
+			<div class = txt> En este ni idea xd
+
+			</div>
+		</div>
+		<!-- PAGINA PRINCIPAL -->
+		<div class = trj>
+			<div class = ttl> Inicio </div>
+			<div class = cj3 style = "height: 500px; display: flex; flex-direction: column;">
+				<div class = "cj1 enc">
+					<div class = "cj3 lec">
+						<div class = "cj2 le">Elemento</div>
+						<div class = "cj2 le">Elemento 2</div>
+					</div>
+					<div class = "cj3 lec">
+						<div class = "cj2 le">Elemento 3</div>
+						<div class = "cj2 le">Elemento 4</div>
+					</div>
+				</div>
+				<div class = "cj1 cue">
+					<img src = "estrella.png"
+						al = "Estrella de 4 puntas" style = "min-height: 10vh; max-height: 20vh;"
+						class = cj3>
+					<div class = "cj3 cont" >
+					<input id = "cmp" type = "search" 
+						oninput = "exp ()"
+						size = 26 style = "text-align: center;"
+						placeholder = "Teclee algo..."
+						>
+						<img src = "./search-white.png"
+							al = "Lupa"
+							height = "20px"
+							style = "padding: 7px;
+								border-radius: 4px;
+								">
+					</div>
+					<div class = "cj3 cont" style = "gap: 2vw;">
+						<button class = "cj2 btnS">Botón 1</button>
+						<button class = "cj2 btnS">Botón 2</button>
+					</div>
+				</div>
+				<div class = "cj1 pie">
+					<div class = "cj3 lec">
+						<div class = "cj2 le">Elemento</div>
+						<div class = "cj2 le">Elemento 2</div>
+					</div>
+					<div class = "cj3 lec">
+						<div class = "cj2 le">Elemento 3</div>
+						<div class = "cj2 le">Elemento 4</div>
+					</div>
+				</div>
+			</div>
+			<div class = txt> Se supone que sea la apariencia de la página principal
+
+			</div>
+		</div>
+		<!-- ULTIMO -->
+		<div class = trj>
+			<div class = ttl> Vista de rejilla</div>
+			<div class = cj3 style = "display: flex; flex-direction: column; height: 450px;">
+				<div class = "cj1 enc2">
+					Página web
+				</div>
+				<div class = cj1 style = "flex: 1; display: flex;">
+					<div class = "cj2 bar2">
+							<div class = "cj3 lig c3f">Liga 1</div>
+							<div class = "cj3 lig c3f">Liga 2</div>
+							<div class = "cj3 lig c3f">Liga 3</div>
+							<div class = "cj3 lig c3f">Liga 4</div>
+					</div>
+					<div class = "cj2 rej">
+							<div class = "cj3 mtrj c3f">Obj1</div>
+							<div class = "cj3 mtrj c3f">Obj2</div>
+							<div class = "cj3 mtrj c3f">Obj3</div>
+							<div class = "cj3 mtrj c3f">Obj4</div>
+							<div class = "cj3 mtrj c3f">Obj5</div>
+							
+							<!--<div class = "cj3 mtrj">Obj6</div>
+							<div class = "cj3 mtrj">Obj7</div>-->
+					</div>
+				</div>
+				<div class = "cj1 pie2">
+					Pie de página.
+				</div>
+			</div>
+			<div class = txt>Supone una página con encabezado, barra lateral, rejilla y pie de página.</div>
+		</div>
+		<!-- ACOMODO PREVIO -->
+		<div class = trj>
+			<div class = ttl>Anterior</div>
+			<div class = "flex-container" name = "contenedor"> 
+				
+				<div class = "flex-item" style = "margin-left: 130px;"> 
+					FlexItem 1 </div>
+				<div class = "flex-item"> 
+					FlexItem 2 </div>
+				<div class = "flex-item"> 
+					FlexItem 3 </div>
+			</div>
+			<div class = txt> Agrupados aprovechando todo el ancho.
+				Dejando un espacio al inicio.
+			</div>
+		</div>
+	</BODY>
+</html>
+
+<script type = "text/javascript">
+	const cmp = document.getElementById ("cmp");
+	function exp () {
+		//if (cmp.value.length + 4 > 20)
+		let len = cmp.value.length;
+		let max = 1;
+		if (cmp.getBoundingClientRect().width >=
+			document.getElementsByClassName ('trj')[0].getBoundingClientRect().width * 0.8)
+			max = 0;
+		cmp.style.width = //len + 2 - (len - (len / 10)) / 6
+			//len * 5	
+			len + 2 + 1 //+ (len / 10)
+			+ //"rem";
+			//"%";
+			 "ch";
+	}
+</script>

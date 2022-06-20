@@ -1,0 +1,301 @@
+body {
+	font : medium Roboto, sans-serif;
+	color : white; background-color : #0F0C12;
+}
+.trj {
+	background-color : #222222;
+	padding : 20px;
+	margin : 2%;
+	box-shadow: 0px 0px 9px 1px black;
+}
+.ttl {
+	font : bold 24px Ubuntu, sans-serif;
+	color : #B5A0B0;
+	background-color : #181818;
+	border : solid 1px black;
+	text-align: center;
+	margin : -20px -20px 20px;
+	padding : 10px;
+	text-shadow: 0px 0px 6px black;
+}
+.txt {
+	font : 18px Roboto, sans-serif;
+	color : white;
+	background-color : #1C1C1C;
+	border: solid 1px black;
+	margin : 20px;
+	padding : 20px;
+}
+.imp {
+	font : 20px Roboto, sans-serif;
+	color : white;
+	text-align: center;
+	background-color : #282828;
+	border : solid 2px #454545;
+	margin : 20px;
+	padding : 15px;
+}
+button {
+	font : bold 20px Ubuntu, sans-serif;
+	color : violet;
+	background-color : #352530;
+	border : solid 2px #A04580;
+	border-radius : 8px;
+	padding : 12px 25px;
+	margin : 10px;
+	box-shadow : 0px 0px 4px 4px #401A30;
+	transition : 0.1s;
+}
+	button:hover {
+		transition : 0.1s;
+		color : white;
+		background-color : #552535;
+		border-color : #FF5590;
+		box-shadow : 0px 0px 6px 6px #702A40;
+	}
+	button:active {
+		color : #250010;
+		background-color : #CF25A0;
+		border : solid 2px #C02580;
+		border-radius : 8px;
+		box-shadow : 0px 0px 5px 5px #500A30;
+	}
+input {
+	font: 18px "Trebuchet MS", sans-serif;
+	color: white;
+	background-color: #1C1C1C;
+	border: solid 1px black;
+	border-top: solid 1px black;
+	border-bottom: solid 3px #4F4F4F;
+	box-sizing: content-box;
+	border-radius: 4px;
+	padding: 8px;
+	/* width: fit-content; /* No sirve, hace caso a min y al max*/
+	min-width: fit-content; /* Evita que regrese al absoluto mín*/
+	max-width: 50vw; /* Solo respeta este límite .___. */
+	height: fit-content;
+	outline: none;
+	transition: 0.1s;
+}
+	input:hover {
+		border-color: #5545FF;
+		transition: 0.1s;
+	}
+	input:focus {
+		border-bottom-color: white;
+		transition: 0.1s;
+	}
+	input:active {
+		font-style: normal !important;
+		color: white;
+		transition: 0.1s;
+	}
+	input::placeholder {
+		font-style: italic;
+	}
+.flex-container {
+	background-color : #251520;
+	border : solid 4px #551030;
+	display: flex;
+	justify-content: space-between;
+	padding : 15px;
+	
+}
+.flex-item {
+	/* Hereda el borde. No lo sobreescribe.*/
+	background-color : #2A203A;
+	height : 100px; width : 100px;
+	border : solid 4px #301085;
+}
+.cj1 {
+	background-color : #201040;
+	border: dashed 2px #5545FF;
+}
+.cj2 {
+	font: bold 14px Roboto, sans-serif;
+	background-color : #351A1A;
+	border: dashed 2px #C03065;
+	text-align: justify;
+}
+.cj3 {
+	font: bold 14px Roboto, sans-serif;
+	background-color : #1a2f1d;
+	border: dashed 2px #30c03c;
+	transition: 0.2s;
+}
+.cen {
+	height: 100px;
+	margin: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+.cen2 {
+	height: 50px; width: 80px;
+	text-align: center;
+}
+.nav {
+	padding: 5px 10px;
+	gap: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nave {
+	padding: 5px 10px;
+}
+	.navi {
+		align-self: left;
+	}
+	.navc {
+		align-self: middle;
+		text-align: center;
+	}
+	.navd {
+		align-self: right;
+		text-align: right;
+	}
+/* Barra de navegación 2*/
+.nav2 {
+	padding: 5px 10px;
+	display: flex;
+}
+.nav2e {
+	padding: 5px 10px;
+}
+	.nav2e {
+		text-align: right;
+	}
+/* Panel de información */
+.pnl {
+	padding: 20px;
+	display: flex;
+	align-items: middle; /* En vez de center 
+		para que tengan la misma altura. */
+	justify-content: center;
+	gap: 50px;
+}
+	.pnlt {
+		font: bold 26px Ubuntu, sans-serif;
+		text-shadow: 0px 0px 6px black;
+		text-align: center;
+		padding: 5px;
+	}
+	.pnli {
+		width: 120px;
+		font: 18px "Trebuchet MS", sans-serif;
+		word-wrap: normal;
+		padding: 5px;
+		text-align: center;
+	}
+/* MENSAJE POPUP */
+.pop {
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: middle;
+}
+	.popi {
+		padding: 0.7vw;
+	}
+	.poptl {
+		font: bolder 22px Ubuntu, monospace;
+		padding: 5px;
+	}
+	.poptx {
+
+		font: 18px "Trebuchet MS", sans-serif;
+		padding: 5px;
+		text-align: justify;
+		word-wrap: normal;
+	}
+/* PAGINA INICIAL */
+.enc {
+	/* height: 40px; */
+	display: flex;
+	justify-content: space-between;
+	padding: 1vh;
+}	
+	.lec {
+		display: flex; flex-direction: row; gap: 1vh;
+	}
+	.le {
+		text-align: center; padding: 5px 10px;
+	}
+	.void { margin: 0px -10px; flex: 1; }
+.cue {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 1vh;
+	justify-content: center; /* H */
+	align-items: center; /* V */
+	overflow: auto;
+	/* padding: 2vh; */
+}
+	.cont { display: flex; justify-content: center; }
+	.btnS { font-size: 1em; margin: 0px; padding: 0.7vh 12px; }
+.pie {
+	/* height: 50px; */
+	display: flex;
+	justify-content: space-between;
+	padding: 1vh;
+	
+}
+/* PAGINA CON REJILLA */
+.enc2 {
+	font: bold 28px Ubuntu, sans-serif;
+	padding: 7px 20px;
+
+}
+.bar2 {
+	flex-direction: column;
+	width: 130px;
+	flex-shrink: 0;
+}
+.lig {
+	font: bold 18px "Trebuchet MS", sans-serif;
+	padding: 13px 15px;
+}
+.rej {
+	flex: 1; display: flex;
+	/* flex-direction: row; flex-wrap: wrap; /* v Se reemplaza con: */
+	flex-flow: row wrap;
+	padding: 2vh ;
+	gap: 2vh 2vw;
+	overflow-y: scroll; /* < No importa que fluya, supone una pag completa */
+}
+.mtrj {
+	font: 14px "Trebuchet MS", sans-serif;
+	padding: 20px;
+	width: 20%; height: 30%;
+	/* width: 200px; height: 200px; */
+}
+.pie2 {
+	font: bold 16px "Trebuchet MS", sans-serif;
+	padding: 10px;
+	text-align: center;
+}
+	.c3f:hover {
+		transition: 0.2s;
+		border-color: #A0FF80;
+		background-color: #256030;
+	}
+	.c3f:active {
+		transition: 0.1s;
+		color: #0F0C12;
+		border-color: white;
+		background-color: #85F050;
+	}
+	.c2f:hover {
+		transition: 0.2s;
+		background-color : #70152A;
+		border-color: #FF60A0;
+	}
+	.c2f:active {
+		transition: 0.1s;
+		color: #0F0C12;
+		border-color: white;
+		background-color: #F05085;
+	}
